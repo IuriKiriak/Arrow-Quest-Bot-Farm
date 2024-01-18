@@ -4,7 +4,7 @@
     "path" : "/template/Quest.png",
     "coordinate": {
       "x": 1010,
-      "y": 290
+      "y": 250
     },
     "time": 0
   },
@@ -21,8 +21,8 @@
     "name": "shop",
     "path" : "",
     "coordinate": {
-      "x": 980,
-      "y": 2300
+      "x": 1020,
+      "y": 2230
     },
     "time": 0
   },
@@ -31,7 +31,7 @@
     "path" : "",
     "coordinate": {
       "x": 810,
-      "y": 2300
+      "y": 2230
     },
     "time": 0
   },
@@ -40,7 +40,7 @@
     "path" : "",
     "coordinate": {
       "x": 630,
-      "y": 2300
+      "y": 2230
     },
     "time": 0
   },
@@ -49,7 +49,7 @@
     "path" : "",
     "coordinate": {
       "x": 450,
-      "y": 2300
+      "y": 2230
     },
     "time": 0
   },
@@ -58,7 +58,7 @@
     "path" : "",
     "coordinate": {
       "x": 250,
-      "y": 2300
+      "y": 2230
     },
     "time": 0
   },
@@ -67,7 +67,7 @@
     "path" : "",
     "coordinate": {
       "x": 85,
-      "y": 2300
+      "y": 2230
     },
     "time": 0
   }

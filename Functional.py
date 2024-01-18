@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def find_events(screenshot, template_path):
     # Загрузка шаблона изображения
     template = cv2.imread(template_path, cv2.IMREAD_COLOR)
@@ -21,3 +22,13 @@ def find_events(screenshot, template_path):
         found_coordinates.append(center_coordinates)
 
     return found_coordinates
+
+def find_template(array, x, y):
+    for i in range(0, len(array), 3):
+        x_item, y_item = array[i], array[i + 1]
+        if x_item < 0 or y_item < 0:  # Пропускаем координаты с отрицательными значениями
+            continue
+        if abs(x_item - x) <= 40 and abs(y_item - y) <= 40:
+            return array[i + 2]
+    return None
+
