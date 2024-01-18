@@ -22,12 +22,6 @@ def Variable(FileName):
         time = item["time"]
         print("Var save:\n name:" + name + "X:" + x + "Y:" + y + "Time:" + time)
 
-def New_Veriable(FileName, new_data):
-    data = read_json_file(FileName)
-    data.append(new_data)
-    write_json_file(FileName, data)
-
-
 def create_array_from_json(file_name):
     with open(file_name, "r", encoding="utf-8") as file:
         data = json.load(file)

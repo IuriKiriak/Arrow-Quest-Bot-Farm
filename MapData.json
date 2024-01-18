@@ -9,7 +9,7 @@
     "time": 0
   },
   {
-    "name": "pass",
+    "name": "Pass",
     "path" : "/template/Pass.png",
     "coordinate": {
       "x": 1010,
@@ -18,7 +18,7 @@
     "time": 0
   },
   {
-    "name": "shop",
+    "name": "Shop",
     "path" : "",
     "coordinate": {
       "x": 1020,
@@ -45,7 +45,7 @@
     "time": 0
   },
   {
-    "name": "backup",
+    "name": "Backup",
     "path" : "",
     "coordinate": {
       "x": 450,

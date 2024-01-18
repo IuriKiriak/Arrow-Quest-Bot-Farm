@@ -1,5 +1,8 @@
+from FunAdb import *
+
 import cv2
 import numpy as np
+import time
 
 
 def find_events(screenshot, template_path):
@@ -13,7 +16,7 @@ def find_events(screenshot, template_path):
 
     # Сравнение скриншота с шаблоном
     res = cv2.matchTemplate(screenshot, template, cv2.TM_CCOEFF_NORMED)
-    threshold = 0.8
+    threshold = 0.75
     loc = np.where(res >= threshold)
 
     found_coordinates = []
@@ -31,4 +34,35 @@ def find_template(array, x, y):
         if abs(x_item - x) <= 40 and abs(y_item - y) <= 40:
             return array[i + 2]
     return None
+
+def switch_case(name):
+    if name == "Quest":
+        while True:
+            screenshot = get_screenshot()
+            quest_events = find_events(screenshot, "template/Claim.png")
+            if quest_events:
+                for x, y in quest_events:
+                    tap_screen(x, y)
+                    print("tap:", x,y)
+                    time.sleep(1)
+                    tap_screen(550, 2100)
+                    print("tap", 550,2100)
+                    time.sleep(1)
+                    return 1
+            else:
+                print("Expect Quest")
+    elif name == "Shop":
+        while True:
+            screenshot = get_screenshot()
+            quest_events = find_events(screenshot, "template/Free.png")
+            if quest_events:
+                for x, y in quest_events:
+                    tap_screen(x, y)
+                    print("tap:", x,y)
+                    time.sleep(1)
+                    tap_screen(1020, 2230)
+                    print("tap:", 1020,2230)
+                    return 1
+            else:
+                print("Expect Shop Claim")
 
