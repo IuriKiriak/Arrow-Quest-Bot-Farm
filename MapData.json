@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Quest",
+    "path" : "/template/Quest.png",
+    "coordinate": {
+      "x": 1010,
+      "y": 290
+    },
+    "time": 0
+  },
+  {
+    "name": "pass",
+    "path" : "/template/Pass.png",
+    "coordinate": {
+      "x": 1010,
+      "y": 450
+    },
+    "time": 0
+  },
+  {
+    "name": "shop",
+    "path" : "",
+    "coordinate": {
+      "x": 980,
+      "y": 2300
+    },
+    "time": 0
+  },
+  {
+    "name" : "Dungeon",
+    "path" : "",
+    "coordinate": {
+      "x": 810,
+      "y": 2300
+    },
+    "time": 0
+  },
+  {
+    "name": "Summon",
+    "path" : "",
+    "coordinate": {
+      "x": 630,
+      "y": 2300
+    },
+    "time": 0
+  },
+  {
+    "name": "backup",
+    "path" : "",
+    "coordinate": {
+      "x": 450,
+      "y": 2300
+    },
+    "time": 0
+  },
+  {
+    "name": "Gear",
+    "path" : "",
+    "coordinate": {
+      "x": 250,
+      "y": 2300
+    },
+    "time": 0
+  },
+  {
+    "name": "Upgreades",
+    "path" : "",
+    "coordinate": {
+      "x": 85,
+      "y": 2300
+    },
+    "time": 0
+  }
+]
